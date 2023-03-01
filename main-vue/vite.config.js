@@ -8,7 +8,11 @@ export default defineConfig({
   plugins: [vue()],
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('./src', import.meta.url)),
+    },
+    },
+    server: {
+        port: 9999,  // 端口号
+        open: true,  // 是否自动在浏览器打开
     }
-  }
 })
