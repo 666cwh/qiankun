@@ -18,10 +18,11 @@ const handleSelect = (key, keyPath) => {
       @select="handleSelect"
     >
       <el-menu-item index="1">vue-vite</el-menu-item>
-      <el-menu-item index="2">Orders</el-menu-item>
+      <el-menu-item index="2">vue2</el-menu-item>
     </el-menu>
     <!-- vue-vite子应用 -->
     <div id="vueProject"></div>
+    <div id="vue2Project"></div>
   </div>
 </template>
 
