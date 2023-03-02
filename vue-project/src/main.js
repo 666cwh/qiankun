@@ -6,7 +6,6 @@ import {
   } from 'vite-plugin-qiankun/dist/helper'
   
 
-import './assets/main.css'
 
 function render() {
     let app = createApp(App)
