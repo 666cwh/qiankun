@@ -29,6 +29,12 @@ registerMicroApps(
       container: '#vue2Project',
       activeRule: '/vue2-project',
     },
+    {
+      name: 'react-project', // app name registered
+      entry: '//localhost:8899',
+      container: '#reactProject',
+      activeRule: '/react-project',
+    },
   ],
   {
     beforeLoad: (app) => {
@@ -52,7 +58,7 @@ registerMicroApps(
   }
 )
 //默认打开项目
-setDefaultMountApp('/vue2-project')
+setDefaultMountApp('/vue-project')
 //启动
 start()
 //全局捕获异常

@@ -4,9 +4,9 @@ import App from './App.vue'
 
 // createApp(App).mount('#vue2Projectdemo')
 
-let instance = null;
+// let instance = null;
 function render () {
-  instance = createApp(App).mount(document.querySelector('#vue2Projectdemo'))
+  createApp(App).mount(document.querySelector('#vue2Projectdemo'))
 }
 // 独立运行时
 if (!window.__POWERED_BY_QIANKUN__) {
@@ -21,5 +21,5 @@ if (!window.__POWERED_BY_QIANKUN__) {
     render(props);
   }
   export async function unmount() {
-    instance.$destroy();
+    // instance.$destroy();
   }
