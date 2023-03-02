@@ -10,8 +10,7 @@ import {
 
 createApp(App).mount('#app')
 
-
-
+//qiankun子应用配置
 registerMicroApps(
   [
     {
@@ -42,6 +41,8 @@ registerMicroApps(
     ],
   }
 )
+//默认打开项目
 setDefaultMountApp('/vue-project')
 start()
+//全局捕获异常
 addGlobalUncaughtErrorHandler((event) => console.log(event))
