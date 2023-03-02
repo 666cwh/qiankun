@@ -3,8 +3,7 @@
 </script>
 
 <template>
-
-  <div>zi</div>
+  <div>vue-vite</div>
 </template>
 
 <style scoped>

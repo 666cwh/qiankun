@@ -1,14 +1,18 @@
 import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
+import locale from 'element-plus/lib/locale/lang/zh-cn'
 import App from './App.vue'
+
 import {
   start,
   setDefaultMountApp,
   registerMicroApps,
   addGlobalUncaughtErrorHandler,
 } from 'qiankun'
-  
 
-createApp(App).mount('#app')
+//注册组件
+createApp(App).use(ElementPlus, { locale }).mount('#app')
 
 //qiankun子应用配置
 registerMicroApps(
@@ -43,6 +47,7 @@ registerMicroApps(
 )
 //默认打开项目
 setDefaultMountApp('/vue-project')
+//启动
 start()
 //全局捕获异常
 addGlobalUncaughtErrorHandler((event) => console.log(event))
