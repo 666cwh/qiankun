@@ -4,13 +4,14 @@ import { ref } from 'vue'
 const activeIndex = ref('1')
 // 切换导航
 const handleSelect = (key, keyPath) => {
-    console.log(key, keyPath, activeIndex)
-    let obj = {
-        1: '/vue-project',
-        2: '/vue2-project',
-        3:'/react-project'
-    }
-    history.pushState(null, obj[key], obj[key])
+  console.log(key, keyPath, activeIndex)
+  let obj = {
+    1: '/vue-project',
+    2: '/vue2-project',
+    3: '/react-project',
+  }
+  //路由跳转
+  history.pushState(null, obj[key], obj[key])
 }
 </script>
 
@@ -23,7 +24,7 @@ const handleSelect = (key, keyPath) => {
       mode="horizontal"
       @select="handleSelect"
     >
-      <el-menu-item index="1">vue-vite</el-menu-item>
+      <el-menu-item index="1">vue3-vite</el-menu-item>
       <el-menu-item index="2">vue2</el-menu-item>
       <el-menu-item index="3">react</el-menu-item>
     </el-menu>
