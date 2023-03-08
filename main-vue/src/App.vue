@@ -1,5 +1,10 @@
 <script setup>
 import { ref } from 'vue'
+import {
+  start,
+} from 'qiankun'
+//启动微应用
+start()
 //导航默认选中
 const activeIndex = ref('1')
 // 切换导航

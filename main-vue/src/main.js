@@ -59,7 +59,5 @@ registerMicroApps(
 )
 //默认打开项目
 setDefaultMountApp('/vue-project')
-//启动
-start()
 //全局捕获异常
 addGlobalUncaughtErrorHandler((event) => console.log(event))

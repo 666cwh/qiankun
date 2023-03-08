@@ -17,9 +17,9 @@ renderWithQiankun({
   mount(props) {
     render(props.container)
   },
-    unmount () {
-        // let app = createApp(App)
-        // app.mount(document.querySelector('#vueProjectdemo')).unmount()
+  unmount() {
+    // let app = createApp(App)
+    // app.mount(document.querySelector('#vueProjectdemo')).unmount()
   },
 })
 
