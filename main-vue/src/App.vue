@@ -9,7 +9,6 @@ start()
 const activeIndex = ref('1')
 // 切换导航
 const handleSelect = (key, keyPath) => {
-  console.log(key, keyPath, activeIndex)
   let obj = {
     1: '/vue-project',
     2: '/vue2-project',
