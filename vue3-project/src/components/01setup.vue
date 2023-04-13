@@ -17,7 +17,7 @@ export default {
       this.name = 'cheng'
       console.log(
         this.name,
-        this.$options.setup(),
+        this.$options.setup().name,
         ' Cannot read properties of undefined'
       )
     },
