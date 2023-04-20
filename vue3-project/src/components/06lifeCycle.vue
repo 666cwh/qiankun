@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>06生命周期函数</h1>
-    
+
     // beforMount => onBeforeMount
     <br />
     // mounted => onMounted
@@ -43,7 +43,7 @@ export default {
   },
   beforeUpdate() {
     console.log('vue2生命周期-----09-----beforeUpdate')
-    },
+  },
   updated() {
     console.log('vue2生命周期-----11-----updated')
   },

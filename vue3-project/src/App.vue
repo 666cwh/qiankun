@@ -5,6 +5,7 @@ import context from './components/03context/03context.vue'
 import todoList from './components/04todolist.vue'
 import Computed from './components/05computed.vue'
 import lifecycle from './components/06lifeCycle.vue'
+import Ref from './components/07refProvideInject/index.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import lifecycle from './components/06lifeCycle.vue'
     <todoList></todoList>
     <Computed></Computed>
     <lifecycle></lifecycle>
+    <Ref></Ref>
   </div>
 </template>
 
