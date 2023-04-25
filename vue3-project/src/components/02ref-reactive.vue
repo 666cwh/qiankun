@@ -50,8 +50,9 @@ export default {
     const objToref = reactive({ nametoRef: 'toRef' })
     const defaultName = toRef(objToref, 'defaultName')
     setTimeout(() => {
-      defaultName.value = 'toRef:为变量中添加默认值'
+      defaultName.value = 'toRef:将响应式下发到复杂数据类型的指定项'
     }, 3000)
+    console.log(objToref,defaultName,'defaultName')
     return { name, nameObj, nameReadonly, nameToref, ageTorefs, defaultName }
   },
 }
