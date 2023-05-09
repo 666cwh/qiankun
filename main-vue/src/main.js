@@ -35,10 +35,16 @@ registerMicroApps(
       container: '#reactProject',
       activeRule: '/react-project',
     },
+    {
+      name: 'react-ts-project', // app name registered
+      entry: '//localhost:8877',
+      container: '#reacttsProject',
+      activeRule: '/react-ts-project',
+    },
   ],
   {
     beforeLoad: (app) => {
-    //   console.log('before load app.name====>>>>>', app.name)
+      //   console.log('before load app.name====>>>>>', app.name)
     },
     beforeMount: [
       (app) => {
@@ -58,6 +64,6 @@ registerMicroApps(
   }
 )
 //默认打开项目
-setDefaultMountApp('/vue-project')
+setDefaultMountApp('/react-ts-project')
 //全局捕获异常
 addGlobalUncaughtErrorHandler((event) => console.log(event))
