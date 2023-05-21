@@ -4,7 +4,7 @@ import { start } from 'qiankun'
 //启动微应用
 start()
 //导航默认选中
-const activeIndex = ref('4')
+const activeIndex = ref('1')
 // 切换导航
 const handleSelect = (key, keyPath) => {
   let obj = {
