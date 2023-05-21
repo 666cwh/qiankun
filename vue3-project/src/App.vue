@@ -6,6 +6,7 @@ import todoList from './components/04todolist.vue'
 import Computed from './components/05computed.vue'
 import lifecycle from './components/06lifeCycle.vue'
 import Ref from './components/07refProvideInject/index.vue'
+import Vuexleft from './components/08vuex/index.vue'
 </script>
 
 <template>
@@ -17,6 +18,7 @@ import Ref from './components/07refProvideInject/index.vue'
     <Computed></Computed>
     <lifecycle></lifecycle>
     <Ref></Ref>
+    <Vuexleft></Vuexleft>
   </div>
 </template>
 

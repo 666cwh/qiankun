@@ -56,7 +56,7 @@ export default defineConfig({
     },
   },
   server: {
-    port: 8888, // 端口号
+    port: 8889, // 端口号
     open: true, // 是否自动在浏览器打开
   },
   build: {
