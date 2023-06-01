@@ -1,4 +1,5 @@
 <script setup>
+import Project from './project/index.vue'
 import setUp from './components/01setup.vue'
 import refReactive from './components/02ref-reactive.vue'
 import context from './components/03context/03context.vue'
@@ -7,19 +8,22 @@ import Computed from './components/05computed.vue'
 import lifecycle from './components/06lifeCycle.vue'
 import Ref from './components/07refProvideInject/index.vue'
 import Vuexleft from './components/08vuex/index.vue'
+import Promise from './components/09promise/index.vue'
 </script>
 
 <template>
-  <div>
-    <setUp></setUp>
-    <refReactive></refReactive>
-    <context></context>
-    <todoList></todoList>
-    <Computed></Computed>
-    <lifecycle></lifecycle>
-    <Ref></Ref>
-    <Vuexleft></Vuexleft>
-  </div>
+    <div>
+        <Project></Project>
+        <setUp></setUp>
+        <refReactive></refReactive>
+        <context></context>
+        <todoList></todoList>
+        <Computed></Computed>
+        <lifecycle></lifecycle>
+        <Ref></Ref>
+        <Vuexleft></Vuexleft>
+        <Promise></Promise>
+    </div>
 </template>
 
 <style scoped></style>

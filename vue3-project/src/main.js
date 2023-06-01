@@ -8,6 +8,7 @@ import {
   renderWithQiankun,
   qiankunWindow,
 } from 'vite-plugin-qiankun/dist/helper'
+import './style/base.scss'
 
 function render() {
   let app = createApp(App)
