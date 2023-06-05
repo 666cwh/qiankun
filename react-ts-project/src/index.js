@@ -1,15 +1,19 @@
 import React from 'react';
 import App from './App';
+import ReactDOM from 'react-dom/client'
 import reportWebVitals from './reportWebVitals';
 import { createRoot } from 'react-dom/client';//更新后的写法
 
 reportWebVitals();
 
-function render(props) {
-    createRoot(document.getElementById('reactProjectdemo')).render(
+function render (props) {
+    const root = ReactDOM.createRoot(
+        document.getElementById('reacttsProjectdemo')
+      );
+      root.render(
         <React.StrictMode>
           <App />
-        </React.StrictMode>,
+        </React.StrictMode>
       );
   }
   

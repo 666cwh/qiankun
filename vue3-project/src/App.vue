@@ -9,6 +9,8 @@ import lifecycle from './components/06lifeCycle.vue'
 import Ref from './components/07refProvideInject/index.vue'
 import Vuexleft from './components/08vuex/index.vue'
 import Promise from './components/09promise/index.vue'
+import designMode from './components/010designMode.vue'
+import arithmetic from './components/011arithmetic.vue'
 </script>
 
 <template>
@@ -23,6 +25,8 @@ import Promise from './components/09promise/index.vue'
         <Ref></Ref>
         <Vuexleft></Vuexleft>
         <Promise></Promise>
+        <designMode></designMode>
+        <arithmetic></arithmetic>
     </div>
 </template>
 

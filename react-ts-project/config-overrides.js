@@ -1,5 +1,4 @@
 const { name } = require('./package');
-
 module.exports = {
   webpack: (config) => {
     config.output.library = `${name}-[name]`;
