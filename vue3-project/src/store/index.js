@@ -5,16 +5,18 @@ export default createStore({
     name: '程',
   },
   actions: {
-    change() {
-      console.log('123')
-     
+    // dispatch
+    change(context, val) {
+      console.log('123', context, val)
+
       this.commit('changes')
     },
   },
+  // commit
   mutations: {
-    changes(store,str) {
-          console.log('456',str)
-          store.name = str
+    changes(store, str) {
+      console.log('456', str)
+      store.name = str
     },
   },
   modules: {},

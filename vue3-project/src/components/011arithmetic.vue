@@ -9,7 +9,7 @@
 
 export default ({
     setup () {
-        //冒泡排序
+        //冒泡排序  比较相邻的元素。如果第一个比第二个大，就交换他们两个
         const bubbleSort = () => {
             console.log('冒泡排序')
             Array.prototype.bubble = function () {
@@ -33,7 +33,7 @@ export default ({
         }
 
 
-        //选择排序
+        //选择排序  首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置
         const selectionSort = () => {
             console.log('选择排序')
             Array.prototype.selection = function () {

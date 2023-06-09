@@ -11,13 +11,11 @@ import Vuexleft from './components/08vuex/index.vue'
 import Promise from './components/09promise/index.vue'
 import designMode from './components/010designMode.vue'
 import arithmetic from './components/011arithmetic.vue'
-import Demo from './components/demo/index.vue'
 </script>
 
 <template>
     <div>
-        <!-- <Project></Project> -->
-        <Demo></Demo>
+        <Project></Project>
         <setUp></setUp>
         <refReactive></refReactive>
         <context></context>

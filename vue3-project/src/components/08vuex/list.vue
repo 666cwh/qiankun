@@ -15,7 +15,7 @@ export default {
     methods: {
         nameBtn () {
             // this.$store.state.name = 123
-            // this.$store.dispatch('change')
+            // this.$store.dispatch('change','221233')
             this.$store.commit('changes', 'list')
         },
     },
