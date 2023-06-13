@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useContext, createContext } from 'react'
 
 const LikeButton: React.FC = () => {
   // useState
@@ -29,8 +29,8 @@ const LikeButton: React.FC = () => {
   })
   console.log('before', positions.x)
 
-  const [num, setNum] = useState(0)
-  let timer:any
+  const [num, setNum] = useState(1)
+  let timer: any
   useEffect(() => {
     timer = setInterval(() => {
       setNum(num + 1)
@@ -40,7 +40,10 @@ const LikeButton: React.FC = () => {
     if (num < 10) {
       clearInterval(timer)
     }
-  },[num])
+  }, [num])
+
+  const Context = createContext(null)
+
   return (
     <div>
       <h1>01useState</h1>
@@ -73,8 +76,33 @@ const LikeButton: React.FC = () => {
       <h1>05useCallback-----返回函数</h1>
       <h1>06uesRef-----长久存储值</h1>
       <div>{num}</div>
+      <h1>07context</h1>
+      {/* <Context.Provider value={num}> */}
+        <Subcomponent numBer={num}></Subcomponent>
+        <Subcomponent3 numBer={num}></Subcomponent3>
+      {/* </Context.Provider> */}
+    </div>
+  )
+}
+const Subcomponent = (props: any) => {
+  const Context = createContext(null)
+  const num = useContext(Context)
+  const { numBer } = props
+  return (
+    <div>
+      {num}子组件1{numBer}
+      <Subcomponent2 numBer={numBer}></Subcomponent2>
     </div>
   )
 }
 
+const Subcomponent2 = (props: any) => {
+  const { numBer } = props
+  return <div>子组件2{numBer}</div>
+}
+
+const Subcomponent3 = (props: any) => {
+  const { numBer } = props
+  return <div>子组件3{numBer}</div>
+}
 export default LikeButton

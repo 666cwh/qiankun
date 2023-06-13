@@ -64,6 +64,6 @@ registerMicroApps(
   }
 )
 //默认打开项目
-setDefaultMountApp('/react-ts-project')
+setDefaultMountApp('/vue2-project')
 //全局捕获异常
 addGlobalUncaughtErrorHandler((event) => console.log(event))
