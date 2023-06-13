@@ -1,48 +1,59 @@
-let numberString: number[] = [1, 2, 3]
+function demo(data: { x: string; y: string }) {
+  return data.x + data.y
+}
+//当参数不存在时会报错
+// console.log(demo())
 
-interface IPerson {
-  readonly id: number
+console.log(demo({ x: '吃', y: '饭' }))
+
+// interface:自定义静态类型
+interface Point {
+  x: string
+  y: number
+}
+
+const point: Point = {
+  x: '吃',
+  y: 3,
+}
+
+console.log('自定义静态类型:', point.x, point.y)
+
+// 基础类型: null undefined stymbol boolean number string void
+const str: string = 'cheng'
+const num: number = 123
+const bool: boolean = false
+const nul: null = null
+//对象类型
+let obj: {
   name: string
-  age?: number
+  age: number
+} = {
+  name: 'cheng',
+  age: 12,
 }
 
-let viking: IPerson = {
-  id: 1,
-  name: 'zhangsan',
-  //   age: 12,
+// 数组类型
+let arr: any[] = [123, '234324']
+
+// 函数类型
+
+let fun: () => number = () => {
+  return 12
 }
+console.log('基础类型:', str, num, bool, nul, obj, arr, fun)
 
-console.log(numberString, viking)
+//类型注解
+let count: string;
+count = '张三'
 
-function add(x: number, y: number, z?: number): number {
-  if (z) {
-    return x + y + z
-  } else {
-    return x + y
-  }
+console.log('类型注解:', count)
+
+// ts中函数
+function fn(name:string,age:number):string {
+    return name+age
 }
-
-console.log(add(2, 3, 4))
-
-//枚举
-enum Direction {
-  Up,
-  Down,
-  left,
-  right,
-}
-
-console.log(Direction, Direction.Up)
-
-//泛型
-function echo<T>(arg: T): T {
-  return arg
-}
-const str: string = 'str'
-const result: string = echo(str)
-
-console.log(result)
-
+console.log('ts中函数:',fn('张三',24))
 interface Props {
   mes?: string
 }

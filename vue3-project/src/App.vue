@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 import Project from './project/index.vue'
 import setUp from './components/01setup.vue'
 import refReactive from './components/02ref-reactive.vue'
@@ -11,11 +11,14 @@ import Vuexleft from './components/08vuex/index.vue'
 import Promise from './components/09promise/index.vue'
 import designMode from './components/010designMode.vue'
 import arithmetic from './components/011arithmetic.vue'
+import userState from './components/hookVue/useState.vue'
 </script>
 
 <template>
     <div>
-        <Project></Project>
+        <userState></userState>
+        <hr />
+        <!-- <Project></Project> -->
         <setUp></setUp>
         <refReactive></refReactive>
         <context></context>
@@ -23,6 +26,7 @@ import arithmetic from './components/011arithmetic.vue'
         <Computed></Computed>
         <lifecycle></lifecycle>
         <Ref></Ref>
+        <hr />
         <Vuexleft></Vuexleft>
         <Promise></Promise>
         <designMode></designMode>
@@ -30,4 +34,8 @@ import arithmetic from './components/011arithmetic.vue'
     </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+hr {
+    margin: 50px 0;
+}
+</style>
