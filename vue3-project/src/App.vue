@@ -16,9 +16,9 @@ import userState from './components/hookVue/useState.vue'
 
 <template>
     <div>
+        <Project></Project>
         <userState></userState>
         <hr />
-        <!-- <Project></Project> -->
         <setUp></setUp>
         <refReactive></refReactive>
         <context></context>
