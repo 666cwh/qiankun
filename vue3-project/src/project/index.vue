@@ -1,6 +1,5 @@
 <template>
     <div class="vue_box">
-        project
         <ButtonEle></ButtonEle>
     </div>
 </template>
